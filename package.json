@@ -1,0 +1,30 @@
+{
+  "name": "frontend-mentor-qr-code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass assets/scss:dist/css",
+    "build:css": "npm run scss",
+    "build": "npm run build:css",
+    "watch:css": "onchange 'assets/scss/*.scss' -- npm run build:css",
+    "watch": "onchange '*' -- npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badraxas/frontend-mentor-qr-code-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badraxas/frontend-mentor-qr-code-challenge/issues"
+  },
+  "homepage": "https://github.com/badraxas/frontend-mentor-qr-code-challenge#readme",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "onchange": "^7.1.0"
+  }
+}
